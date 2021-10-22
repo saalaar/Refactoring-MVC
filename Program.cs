@@ -22,8 +22,8 @@ public class Program
                 var tempPlayList = JsonConvert.DeserializeObject<PlayData>(File.ReadAllText(playlistfileLocation));
                 var invoices = JsonConvert.DeserializeObject<Invoice[]>(File.ReadAllText(invoicesfileLocation));
                 //if you want to set the file path static in TestFiles of project , uncomment this lines in your sytem path
-                //var tempPlayList = JsonConvert.DeserializeObject<PlayData>(File.ReadAllText(@"C:\Users\Salar\Desktop\Interview_\Assignment\TestFiles\Playlist1.json"));
-                //var invoices = JsonConvert.DeserializeObject<Invoice[]>(File.ReadAllText(@"C:\Users\Salar\Desktop\Interview_\Assignment\TestFiles\Invoice1.json"));
+                //var tempPlayList = JsonConvert.DeserializeObject<PlayData>(File.ReadAllText(@"C:\Users\TestFiles\Playlist1.json"));
+                //var invoices = JsonConvert.DeserializeObject<Invoice[]>(File.ReadAllText(@"C:\Users\TestFiles\Invoice1.json"));
                 Console.Write(StatementPrinter.PrinterTextStatement(invoices[0], tempPlayList));
                 Console.WriteLine();
                 Console.Read();
