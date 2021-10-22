@@ -25,7 +25,7 @@ namespace Assignment.Business
             }
             catch (Exception ex )
             {
-                Console.WriteLine("!!Tragedy calaculation something wrong!!!" + ex.Message.ToString()); 
+                Console.WriteLine("!! in Tragedy calaculation something wrong!!!" + ex.Message.ToString()); 
                 return 0;
             }
            
